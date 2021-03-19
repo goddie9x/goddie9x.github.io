@@ -1,0 +1,322 @@
+/*--------------------DEFAULT-----------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page_body {
+    background-image: url("https://1.bp.blogspot.com/-gOxURpc82Kk/YDF58A52hJI/AAAAAAAAB7A/S_8ST8OtzRExfPkSDq8Mz5TCuMmm6741QCPcBGAsYHg/s0/hinh-nen-duong-bo-bien-Durdle%2BDoor-5k_anhdepHD_Com.jpg");
+    height: 250vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin-left: 0px;
+}
+
+body {
+    background-color: gray;
+}
+
+
+/*--------------------------USABLE------------------------*/
+
+.khung {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.khung-phai {
+    border-top: 1px solid black;
+    border-right: none;
+}
+
+.link-notif {
+    margin-left: 10px;
+}
+
+h3 {
+    color: white;
+}
+
+.nhothoi {
+    margin: 0px;
+    line-height: 20 px;
+}
+
+.thang {
+    display: inline-block;
+    line-height: 10px;
+}
+
+.buoi {
+    text-align: center;
+    width: 200px;
+    font-weight: 900;
+}
+
+.thu {
+    width: 300px;
+}
+
+.chon {
+    margin: 50px;
+    font-size: 180%;
+    line-height: 40px;
+}
+
+.chon select {
+    font-size: 100%;
+    background-color: rgba(24, 26, 27, 0.3);
+    border-radius: 6px;
+    border: 1px solid rgba(24, 26, 27, 0.3);
+}
+
+.buttonF {
+    background-color: red;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.buttonF:hover {
+    border: 3px solid chocolate;
+    background-color: coral;
+}
+
+.buttonF:active {
+    transform: translate(-51%);
+    background-color: pink;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.buttonF::selection {
+    background-color: red;
+}
+
+.clear-fix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*------------------HEADER SECTION-------------------*/
+
+.header {
+    width: 100vw;
+    display: inline-block;
+    background-color: rgba(24, 26, 27, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 30;
+}
+
+.floating-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    border-radius: 5px;
+    max-height: 30px;
+    max-width: 60px;
+}
+
+.notification-icon {
+    margin-right: 5vw;
+    height: 30px;
+    width: 30px;
+}
+
+.notification-icon:active {
+    transform: scale(1.2, 1.2);
+}
+
+.headingTitle {
+    color: rgb(255, 15, 15);
+    font-size: 200%;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+
+/*----------------------NOTIFICATION----------------*/
+
+.notificat-expanded {
+    position: fixed;
+    top: 90px;
+    right: 30px;
+    width: 50vw;
+    max-height: 70vh;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    color: #fff;
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 999;
+}
+
+.main-notif {
+    text-align: left;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+.title-notiv {
+    margin-top: 0px !important;
+    margin-bottom: 20px;
+}
+
+.main-notif--link {
+    padding-top: 10px;
+    border-top: 2px dotted brown;
+    text-align: left;
+}
+
+.notif-inside {
+    margin: 10px 0px;
+}
+
+.notif-inside:hover {
+    background-color: rgba(99, 92, 92, 0.9);
+    border-radius: 3px;
+}
+
+.slide-mode {
+    display: inline-flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.video-play {
+    border-radius: 5px;
+    max-width: 30vw;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.BLOG_video_class {
+    border-radius: 15px;
+    border: none;
+}
+
+
+/*--------------------BODY TABBLE-------------------*/
+
+table {
+    border-radius: 20px;
+    border-spacing: 0;
+    background-image: linear-gradient(60deg, rgba(255, 246, 0, 0.5), rgba(94, 0, 207, 0.5)), url("https://1.bp.blogspot.com/-gOxURpc82Kk/YDF58A52hJI/AAAAAAAAB7A/S_8ST8OtzRExfPkSDq8Mz5TCuMmm6741QCPcBGAsYHg/s0/hinh-nen-duong-bo-bien-Durdle%2BDoor-5k_anhdepHD_Com.jpg");
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 130%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.funnyText {
+    position: fixed;
+    background-color: red;
+    border-radius: 100px;
+    padding: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.funnyText:hover {
+    border: 3px solid chocolate;
+    background-color: coral;
+}
+
+.funnyText:active {
+    transform: translate(5%, 5%);
+    background-color: pink;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.funnyText::selection {
+    background-color: red;
+}
+
+#thang4,
+#thang5,
+#thang6,
+#thang7 {
+    display: none;
+}
+
+.post-bottom {
+    display: none;
+}
+
+.chonThangFloating {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+
+.idol-of-idol {
+    line-height: 200%;
+    margin-bottom: 20px;
+    font-size: 200%;
+    font-weight: 200%;
+}
+
+.video-slide {
+    color: coral;
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+}
+
+
+/*------------------FOOTER--------------------*/
+
+.copyright {
+    margin-top: 30px;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+/*-----------------------RESPONSIVE-------------------*/
+
+@media only screen and (max-width: 800px) {
+    .video-slide {
+        bottom: -100vh;
+    }
+}
