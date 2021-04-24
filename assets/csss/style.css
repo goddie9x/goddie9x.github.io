@@ -9,13 +9,14 @@ html {
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
     text-align: center;
-    background-repeat: no-repeat;
 }
 
 body {
     background-image: url("https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/65089041_1410770242408732_2591622990558920704_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=19026a&_nc_ohc=9Z_IQjaqx-cAX_gHEsQ&_nc_ht=scontent-hkg4-1.xx&oh=0e3cf13b634ee308b9b75e23acff4254&oe=60A7FAB1");
     background-position: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 25px;
 }
 
