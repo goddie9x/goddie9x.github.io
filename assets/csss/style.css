@@ -11,17 +11,9 @@ html {
     text-align: center;
 }
 
-.page_body {
-    background-image: url("https://1.bp.blogspot.com/-gOxURpc82Kk/YDF58A52hJI/AAAAAAAAB7A/S_8ST8OtzRExfPkSDq8Mz5TCuMmm6741QCPcBGAsYHg/s0/hinh-nen-duong-bo-bien-Durdle%2BDoor-5k_anhdepHD_Com.jpg");
-    height: 250vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    margin-left: 0px;
-}
-
 body {
     background-color: gray;
+    padding: 25px;
 }
 
 
@@ -268,8 +260,6 @@ table {
     background-color: red;
 }
 
-#thang4,
-#thang5,
 #thang6,
 #thang7 {
     display: none;
