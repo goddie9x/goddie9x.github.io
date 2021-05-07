@@ -1,8 +1,3 @@
-setInterval(function() {
-    let H1Element = document.querySelector('.headingTitle');
-    H1Element.classList.toggle('colorChangeBlack');
-}, 500);
-
 function elementMoveWhenMouseMove(object) {
     let funnyTextElement = document.querySelector(object.funnyTextElement),
         arrayTextRandom = object.arrayTextRandom;
