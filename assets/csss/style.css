@@ -333,6 +333,7 @@ table {
 
 @media only screen and (max-width: 600px) {
     body {
+        padding: 2px;
         display: inline-flex;
         flex-direction: column;
     }
