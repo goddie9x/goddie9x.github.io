@@ -338,6 +338,7 @@ table {
         flex-direction: column;
     }
     .headingTitle {
+        margin-top: 20px;
         font-size: 120%
     }
     .buoi {
