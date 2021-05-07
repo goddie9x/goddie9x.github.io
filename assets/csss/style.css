@@ -246,6 +246,10 @@ table {
     line-height: 30px;
 }
 
+tbody {
+    max-width: 80vw;
+}
+
 .funnyText {
     position: fixed;
     background-color: red;
