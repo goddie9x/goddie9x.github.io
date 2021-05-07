@@ -48,7 +48,7 @@ h3 {
 
 .thang {
     display: inline-block;
-    width: 80vw;
+    max-width: 80vw;
     line-height: 10px;
 }
 
