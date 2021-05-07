@@ -246,10 +246,6 @@ table {
     line-height: 30px;
 }
 
-tbody {
-    max-width: 80vw;
-}
-
 .funnyText {
     position: fixed;
     background-color: red;
@@ -326,5 +322,8 @@ tbody {
 @media only screen and (max-width: 800px) {
     .video-slide {
         bottom: -100vh;
+    }
+    body {
+        font-size: 80%
     }
 }
