@@ -236,7 +236,7 @@ table {
     border-radius: 20px;
     border-spacing: 0;
     background-image: linear-gradient(60deg, rgba(255, 246, 0, 0.5), rgba(94, 0, 207, 0.5)), url("https://1.bp.blogspot.com/-gOxURpc82Kk/YDF58A52hJI/AAAAAAAAB7A/S_8ST8OtzRExfPkSDq8Mz5TCuMmm6741QCPcBGAsYHg/s0/hinh-nen-duong-bo-bien-Durdle%2BDoor-5k_anhdepHD_Com.jpg");
-    height: 50vh;
+    max-height: 80vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -326,7 +326,28 @@ table {
     body {
         font-size: 80%;
     }
-    table {
-        font-size: 80%;
+    h4 {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .buoi {
+        max-width: 50px;
+    }
+    h4 {
+        font-size: 60%;
+        margin-block-start: 0.1em;
+        margin-block-end: 0.1em;
+    }
+    h5 {
+        font-size: 50%;
+        margin-block-start: 0.1em;
+        margin-block-end: 0.1em;
     }
 }
