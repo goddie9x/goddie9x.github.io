@@ -478,14 +478,13 @@ body {
 }
 
 .sudoku__description {
+    color: #d8d110;
     max-width: 640px;
     line-height: 1.4;
     font-weight: 100;
 }
 
-.sudoku__table {
-    background: #fff;
-}
+.sudoku__table {}
 
 .sudoku__table-cell {
     overflow: hidden;
