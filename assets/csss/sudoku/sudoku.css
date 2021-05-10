@@ -34,11 +34,6 @@ body {
     height: 100%;
 }
 
-body {
-    margin: 0;
-    background: #f0f0f0;
-}
-
 @media (max-width: 260px) {
     .show-on-sm {
         display: none;
