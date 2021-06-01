@@ -97,7 +97,7 @@ a {
     justify-content: space-between;
 }
 
-.main-nav-moblie {
+.main-nav-mobile {
     display: none;
 }
 
@@ -113,7 +113,7 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    min-width: 600px;
+    min-width: 400px;
 }
 
 .main-nav-bar-item:hover {
@@ -157,6 +157,7 @@ a {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    padding: 0;
 }
 
 .main-nav-bar-home {
@@ -299,7 +300,7 @@ a {
         top: 40px;
         right: 20px;
     }
-    .main-nav-moblie {
+    .main-nav-mobile {
         display: block;
     }
 }
