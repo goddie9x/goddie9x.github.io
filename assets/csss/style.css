@@ -14,7 +14,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: fixed;
 }
 
 a {
@@ -43,7 +42,7 @@ a {
     background-color: rgba(0, 0, 0, .3);
     color: aliceblue;
     position: fixed;
-    max-height: 50px;
+    max-height: 10vh;
     padding: 5px;
     padding-bottom: 10px;
 }
@@ -63,9 +62,14 @@ a {
 .logo-image {
     background-image: url(../images/avatar_logo.jpg);
     border-radius: 5px;
-    height: 38px;
-    width: 60px;
+    height: 6vh;
+    width: 6vw;
     background-size: cover;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.logo-image:active {
+    box-shadow: 5px 1px 2px 1px rgba(0, 0, 0, 0.8);
 }
 
 .main-nav-bar {
@@ -108,6 +112,7 @@ a {
     background-color: azure;
     border-radius: 3px;
     margin-left: 10px;
+    margin-right: 10px;
     width: 30px;
     cursor: pointer;
 }
@@ -127,6 +132,7 @@ a {
     width: 4vw;
     left: 20vw;
     top: 20vh;
+    z-index: 4;
 }
 
 .telescope {
@@ -134,10 +140,17 @@ a {
     opacity: 95%;
     bottom: 0;
     left: 0px;
+    z-index: 3;
 }
 
 .telescope.active {
     left: 40vw;
+}
+
+.man-hand-behind-neck {
+    left: 35vh;
+    bottom: 0;
+    z-index: 3;
 }
 
 .tree {
@@ -145,6 +158,18 @@ a {
     opacity: 95%;
     bottom: 0;
     right: 30vw;
+    z-index: 2;
+}
+
+.ground {
+    display: none;
+    width: 100vw;
+    bottom: 0;
+    z-index: 1;
+}
+
+.ground.active {
+    display: block;
 }
 
 .my-cosmos-music {
@@ -159,8 +184,10 @@ a {
 }
 
 .copyright {
+    text-align: center;
     background-image: linear-gradient(to right, rgb(38, 165, 166) 0%, rgb(41, 6, 82) 100%);
     background-color: initial;
     -webkit-text-fill-color: transparent;
-    z-index: 1;
+    -webkit-background-clip: text;
+    z-index: 10;
 }
