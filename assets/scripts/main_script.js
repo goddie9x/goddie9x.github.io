@@ -22,7 +22,6 @@ const $$ = document.querySelectorAll.bind(document);
 $('.main-nav-bar-submit').onclick = function(e) {
     $toggle([$('.ground-2'), $('.house'), $('.moon-big'), $('.moon'), $('.man-sitting'), $('.telescope'), $('.man-hand-behind-neck'), $('.tree'), $('.ground-1')])
 }
-$('.main-nav-moblie').onclick = function() {
-    console.log([...$$('.menu-icon'), $('.main-nav-bar')])
+$('.main-nav-mobile').onclick = function() {
     $toggle([...$$('.menu-icon'), $('.main-nav-bar')]);
 }
