@@ -101,6 +101,12 @@ a {
     display: none;
 }
 
+.main-nav-status {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .main-nav-bar {
     margin: 5px;
     display: inline-flex;
