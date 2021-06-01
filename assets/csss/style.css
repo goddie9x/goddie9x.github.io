@@ -135,6 +135,14 @@ a {
     z-index: 4;
 }
 
+.moon-big {
+    display: none;
+    width: 8vw;
+    left: 20vw;
+    top: 20vh;
+    z-index: 4;
+}
+
 .telescope {
     width: 10vw;
     opacity: 95%;
@@ -156,6 +164,21 @@ a {
     bottom: 0;
     right: 30vw;
     z-index: 2;
+}
+
+.house {
+    display: none;
+    width: 30vw;
+    bottom: 0;
+    right: -2vw;
+    z-index: 2;
+}
+
+.man-sitting {
+    display: none;
+    left: 35vw;
+    bottom: 0;
+    z-index: 3;
 }
 
 .ground {

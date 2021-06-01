@@ -20,5 +20,5 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 $('.main-nav-bar-submit').onclick = function(e) {
-    $toggle([$('.ground-2'), $('.telescope'), $('.man-hand-behind-neck'), $('.tree'), $('.ground-1')])
+    $toggle([$('.ground-2'), $('.house'), $('.moon-big'), $('.moon'), $('.man-sitting'), $('.telescope'), $('.man-hand-behind-neck'), $('.tree'), $('.ground-1')])
 }
