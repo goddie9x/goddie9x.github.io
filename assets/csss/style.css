@@ -42,7 +42,6 @@ a {
     color: aliceblue;
     position: fixed;
     max-height: 10vh;
-    padding-bottom: 10px;
 }
 
 .main-nav {
@@ -152,8 +151,9 @@ a {
 }
 
 .man-hand-behind-neck {
+    width: 10vw;
     display: none;
-    left: 35vh;
+    left: 35vw;
     bottom: 0;
     z-index: 3;
 }
@@ -171,7 +171,7 @@ a {
     width: 30vw;
     bottom: 0;
     right: -2vw;
-    z-index: 2;
+    z-index: 1;
 }
 
 .man-sitting {
@@ -179,6 +179,7 @@ a {
     left: 35vw;
     bottom: 0;
     z-index: 3;
+    width: 10vw;
 }
 
 .rabit-paper {
@@ -214,7 +215,7 @@ a {
 
 .telescope.active {
     left: 40vw;
-    width: 30vh;
+    width: 15vw;
 }
 
 .active {
