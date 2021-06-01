@@ -168,9 +168,9 @@ a {
 
 .house {
     display: none;
-    width: 30vw;
+    width: 40vw;
     bottom: 0;
-    right: -2vw;
+    right: -15vw;
     z-index: 1;
 }
 
