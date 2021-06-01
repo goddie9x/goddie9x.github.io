@@ -34,6 +34,32 @@ a {
     clear: both;
 }
 
+.bar-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bar-item:active {
+    transform: translate(2%, 2%);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.menu-icon {
+    display: none;
+    width: 30px;
+    margin-right: 30px;
+}
+
+.menu-icon:active {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.active {
+    display: block;
+}
+
 
 /*---------------------------------------------HEADER---------------------------------------------------*/
 
@@ -42,6 +68,25 @@ a {
     color: aliceblue;
     position: fixed;
     max-height: 10vh;
+}
+
+.logo {
+    margin: 5px;
+    margin-left: 10px;
+    place-items: 1;
+}
+
+.logo-image {
+    background-image: url(../images/avatar_logo.jpg);
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    background-size: cover;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.logo-image:active {
+    transform: translate(2%, 2%);
 }
 
 .main-nav {
@@ -56,49 +101,13 @@ a {
     display: none;
 }
 
-.menu-icon {
-    display: none;
-    width: 30px;
-    margin-right: 30px;
-}
-
-.menu-icon:active {
-    background-color: rgba(0, 0, 0, .2);
-    padding: 5px;
-}
-
-.logo {
-    margin: 5px;
-    margin-left: 10px;
-}
-
-.logo-image {
-    background-image: url(../images/avatar_logo.jpg);
-    border-radius: 5px;
-    height: 30px;
-    width: 50px;
-    background-size: cover;
-    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.8);
-}
-
-.logo-image:active {
-    box-shadow: 5px 1px 2px 1px rgba(0, 0, 0, 0.8);
-}
-
 .main-nav-bar {
     margin: 5px;
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     min-width: 600px;
-}
-
-.main-nav-bar-item {
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 10px;
 }
 
 .main-nav-bar-item:hover {
@@ -123,6 +132,7 @@ a {
     margin-right: 20px;
     display: inline-flex;
     align-items: center;
+    padding: 0;
 }
 
 .main-nav-bar-search {
@@ -244,10 +254,6 @@ a {
 .telescope.active {
     left: 40vw;
     width: 15vw;
-}
-
-.active {
-    display: block;
 }
 
 
