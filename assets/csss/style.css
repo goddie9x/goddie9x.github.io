@@ -181,6 +181,17 @@ a {
     z-index: 3;
 }
 
+.rabit-paper {
+    width: 2vw;
+    right: 0px;
+    bottom: 0px;
+    z-index: 4;
+}
+
+.rabit-paper:active {
+    width: 20vw;
+}
+
 .ground {
     display: none;
     width: 100vw;
