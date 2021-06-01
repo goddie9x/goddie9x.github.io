@@ -119,16 +119,18 @@ a {
     height: 100vh;
 }
 
+.my-cosmos-image-item {
+    position: absolute;
+}
+
 .moon {
     width: 4vw;
-    position: fixed;
     left: 20vw;
     top: 20vh;
 }
 
 .telescope {
     width: 10vw;
-    position: fixed;
     opacity: 95%;
     bottom: 0;
     left: 0px;
@@ -140,7 +142,6 @@ a {
 
 .tree {
     width: 20vw;
-    position: fixed;
     opacity: 95%;
     bottom: 0;
     right: 30vw;
@@ -155,4 +156,11 @@ a {
 
 .footer {
     display: block;
+}
+
+.copyright {
+    background-image: linear-gradient(to right, rgb(38, 165, 166) 0%, rgb(41, 6, 82) 100%);
+    background-color: initial;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
 }
