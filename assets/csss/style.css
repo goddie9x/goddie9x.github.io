@@ -24,7 +24,6 @@ a {
 /*---------------------------------------------USEABLE---------------------------------------------------*/
 
 .container {
-    padding: 5px;
     width: 100vw;
     height: max-content;
 }
@@ -43,7 +42,6 @@ a {
     color: aliceblue;
     position: fixed;
     max-height: 10vh;
-    padding: 5px;
     padding-bottom: 10px;
 }
 
@@ -77,6 +75,7 @@ a {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .main-nav-bar-item {
@@ -129,6 +128,7 @@ a {
 }
 
 .moon {
+    display: none;
     width: 4vw;
     left: 20vw;
     top: 20vh;
@@ -143,11 +143,8 @@ a {
     z-index: 3;
 }
 
-.telescope.active {
-    left: 40vw;
-}
-
 .man-hand-behind-neck {
+    display: none;
     left: 35vh;
     bottom: 0;
     z-index: 3;
@@ -168,12 +165,26 @@ a {
     z-index: 1;
 }
 
-.ground.active {
+.my-cosmos-music {
+    display: none;
+}
+
+.my-cosmos-image-item.active {
     display: block;
 }
 
-.my-cosmos-music {
-    display: none;
+.tree.active {
+    left: 90vw;
+    width: 30vw;
+}
+
+.telescope.active {
+    left: 40vw;
+    width: 30vh;
+}
+
+.active {
+    display: block;
 }
 
 
@@ -181,6 +192,7 @@ a {
 
 .footer {
     display: block;
+    background-color: black;
 }
 
 .copyright {
