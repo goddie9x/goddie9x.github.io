@@ -16,10 +16,6 @@ body {
     background-attachment: fixed;
 }
 
-a {
-    text-decoration: none;
-}
-
 
 /*---------------------------------------------USEABLE---------------------------------------------------*/
 
@@ -58,6 +54,14 @@ a {
 
 .active {
     display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(19, 173, 58);
 }
 
 
