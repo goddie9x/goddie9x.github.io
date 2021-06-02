@@ -74,10 +74,18 @@ a:visited {
     max-height: 10vh;
 }
 
+.main-nav {
+    width: 100vw;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .logo {
     margin: 5px;
     margin-left: 10px;
-    place-items: 1;
+    flex-g: 1;
 }
 
 .logo-image {
@@ -93,14 +101,6 @@ a:visited {
     transform: translate(2%, 2%);
 }
 
-.main-nav {
-    width: 100vw;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .main-nav-mobile {
     display: none;
 }
@@ -113,11 +113,13 @@ a:visited {
 
 .main-nav-bar {
     margin: 5px;
+    margin-left: 10vw;
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     min-width: 400px;
+    flex-grow: 5;
 }
 
 .main-nav-bar-item:hover {
