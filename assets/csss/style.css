@@ -405,6 +405,12 @@
     /*-------------------------------------------------RESPONSIVE-----------------------------------------------*/
     
     @media (max-width:1000px) {
+        .container {
+            border-radius: 30px;
+            width: 90vw;
+            margin: 60px auto;
+            padding: 40px 50px;
+        }
         .main-nav-bar {
             display: none;
         }
@@ -450,6 +456,12 @@
     @media (max-width: 768px) {
         body {
             font-size: 16px;
+        }
+        .container {
+            border-radius: 5px;
+            width: 95vw;
+            margin: 20px auto;
+            padding: 15px 10px;
         }
         .hello__title {
             font-size: 25px;
