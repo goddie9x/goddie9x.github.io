@@ -14,17 +14,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: #fff;
+    overflow-x: hidden;
 }
 
 
 /*---------------------------------------------USEABLE---------------------------------------------------*/
 
 .container {
-    width: 100vw;
-}
-
-.container+.container {
-    margin-top: 20px;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 50px;
 }
 
 .clear-fixed::after {
@@ -71,21 +71,23 @@ a:visited {
 /*---------------------------------------------HEADER---------------------------------------------------*/
 
 .header {
-    background-color: rgba(0, 0, 0, .3);
-    color: aliceblue;
+    width: 100vw;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     max-height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 .main-nav {
-    width: 100vw;
+    width: 80vw;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, .3);
     display: inline-flex;
-    align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .logo {
@@ -179,9 +181,11 @@ a:visited {
 }
 
 
-/*--------------------------------------------SHARING--------------------------------*/
+/*--------------------------------------------HELLO--------------------------------*/
 
-.sharing {
+.hello {
+    padding: 60px;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
