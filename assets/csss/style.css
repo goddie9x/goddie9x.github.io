@@ -21,7 +21,10 @@ body {
 
 .container {
     width: 100vw;
-    height: max-content;
+}
+
+.container+.container {
+    margin-top: 20px;
 }
 
 .clear-fixed::after {
@@ -71,6 +74,9 @@ a:visited {
     background-color: rgba(0, 0, 0, .3);
     color: aliceblue;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     max-height: 10vh;
 }
 
@@ -173,10 +179,25 @@ a:visited {
 }
 
 
-/*---------------------------------------------MY COSMOS---------------------------------------------------*/
+/*--------------------------------------------SHARING--------------------------------*/
+
+.sharing {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*---------------------------------------------THUTHUAT--------------------------------*/
+
+.thu-thuat {
+    height: 800px;
+}
+
+
+/*---------------------------------------------MY COSMOS------------------------------*/
 
 .my-cosmos {
-    height: 100vh;
+    height: 95vh;
+    position: relative;
 }
 
 .my-cosmos-image-item {
@@ -280,17 +301,20 @@ a:visited {
 
 .footer {
     display: block;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
+
+/* 
 .copyright {
     text-align: center;
     background-image: linear-gradient(to right, rgb(38, 165, 166) 0%, rgb(41, 6, 82) 100%);
     background-color: initial;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    z-index: 10;
+    z-index: 20;
 }
+ */
 
 
 /*-------------------------------------------------RESPONSIVE-----------------------------------------------*/
