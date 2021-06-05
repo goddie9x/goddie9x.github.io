@@ -441,7 +441,6 @@
         .up a img {
             bottom: 10vh;
             right: 18vw;
-            width: 50px;
         }
         .main-nav-bar-search {
             max-width: 100px;
@@ -458,9 +457,6 @@
     @media (max-width:62.875em) {
         .main-nav-bar-search {
             max-width: 200px;
-        }
-        .up a img {
-            width: 80px;
         }
         .container {
             border-radius: 30px;
