@@ -148,7 +148,7 @@
         background-color: rgba(0, 0, 0, .3);
         display: inline-flex;
         flex-direction: row;
-        height: 35px;
+        max-height: 50px;
         justify-content: space-between;
         border-radius: 10px;
     }
