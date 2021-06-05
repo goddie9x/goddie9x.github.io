@@ -106,9 +106,9 @@
     .up a img {
         max-width: 50px;
         position: fixed;
-        bottom: 20px;
+        bottom: 10vh;
         z-index: 99;
-        right: 20px;
+        right: 5vw;
     }
     
     .up a img:hover {
@@ -133,7 +133,6 @@
         width: 100vw;
         position: fixed;
         top: 0;
-        max-height: 10vh;
         display: flex;
         justify-content: center;
         padding: 0;
@@ -434,7 +433,12 @@
  */
     /*-------------------------------------------------RESPONSIVE-----------------------------------------------*/
     
-    @media (max-width:1142px) {
+    @media (max-width: 71.375em) {
+        .up a img {
+            bottom: 10vh;
+            right: 18vw;
+            width: 50px;
+        }
         .main-nav-bar-search {
             max-width: 100px;
         }
@@ -447,7 +451,13 @@
         }
     }
     
-    @media (max-width:1000px) {
+    @media (max-width:62.875em) {
+        .main-nav-bar-search {
+            max-width: 200px;
+        }
+        .up a img {
+            width: 50px;
+        }
         .container {
             border-radius: 30px;
             width: 90vw;
@@ -517,5 +527,8 @@
         }
         .my-cosmos-content-grid {
             flex-direction: column;
+        }
+        .main-nav-bar-search {
+            max-width: 100px;
         }
     }
