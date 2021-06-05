@@ -25,3 +25,6 @@ $('.main-nav-bar-submit').onclick = function(e) {
 $('.main-nav-mobile').onclick = function() {
     $toggle([...$$('.menu-icon'), $('.main-nav-bar')]);
 }
+$('.moon').onclick = function() {
+    $toggle([$('.poems')]);
+}
