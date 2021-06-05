@@ -281,6 +281,14 @@
     .blog__item--des {
         opacity: .8;
     }
+    
+    .poems {
+        display: none;
+    }
+    
+    .poems.active {
+        display: block;
+    }
     /*------------------------------CONTACT--------------------------------*/
     
     .contact {}
@@ -314,6 +322,15 @@
         right: 13vw;
         top: 20vh;
         z-index: 4;
+    }
+    
+    .moon:hover {
+        width: 4.5vw;
+    }
+    
+    .moon:active {
+        border-radius: 100px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
     }
     
     .moon-big {
