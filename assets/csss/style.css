@@ -71,6 +71,11 @@
     
     a {
         text-decoration: none;
+        color: rgba(0, 102, 255, 0.7);
+    }
+    
+    a:hover {
+        color: rgba(0, 102, 255, 0.9)
     }
     
     a:visited {
