@@ -120,6 +120,10 @@
         transform: translate(2%, 2%);
     }
     
+    input[type="text"] {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
     .read-more {
         font-size: 120%;
     }
@@ -205,17 +209,17 @@
         border-radius: 3px;
         background-color: azure;
         height: 30px;
-        max-width: 80px;
+        max-width: 200px;
         margin-left: 10px;
     }
     
     .main-nav-bar-submit {
-        background-color: azure;
+        background-color: rgba(224, 214, 214, 0.8);
         border-radius: 3px;
         margin-left: 10px;
         margin-right: 10px;
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
         cursor: pointer;
         padding: 0;
     }
@@ -412,6 +416,19 @@
 }
  */
     /*-------------------------------------------------RESPONSIVE-----------------------------------------------*/
+    
+    @media (max-width:1142px) {
+        .main-nav-bar-search {
+            max-width: 100px;
+        }
+        .main-nav-mobile {
+            align-self: center;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
     
     @media (max-width:1000px) {
         .container {
