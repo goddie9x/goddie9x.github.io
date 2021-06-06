@@ -119,6 +119,12 @@
         text-align: left;
     }
     
+    .sub-menu-mobile {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
     .sub-menu .bar-item.sub-menu-item {
         color: rgb(255, 255, 255);
     }
@@ -223,6 +229,10 @@
         justify-content: space-between;
         border-radius: 10px;
         position: relative;
+    }
+    
+    .main-nav-bar-mobile {
+        display: none;
     }
     
     .logo {
@@ -509,9 +519,6 @@
             bottom: 10vh;
             right: 18vw;
         }
-        .main-nav-bar-search {
-            max-width: 100px;
-        }
         .main-nav-mobile {
             align-self: center;
             border-radius: 5px;
@@ -519,39 +526,25 @@
             height: 30px;
             background-color: rgba(255, 255, 255, 0.2);
         }
+        .main-nav-search {
+            justify-content: space-between;
+            flex-grow: 5;
+        }
+        .bar-item {
+            width: 15vw;
+            margin-left: 1px;
+        }
+        .main-nav-bar-search {
+            max-width: 12vw;
+        }
     }
     
     @media (max-width:62.875em) {
-        .main-nav-bar-search {
-            max-width: 200px;
-        }
         .container {
             border-radius: 30px;
             width: 90vw;
             margin: 60px auto;
             padding: 40px 50px;
-        }
-        .main-nav-bar {
-            display: none;
-        }
-        .main-nav-bar.active {
-            display: inline-flex;
-            flex-direction: column;
-            min-width: 40px;
-            position: fixed;
-            align-items: flex-end;
-            top: 40px;
-            right: 100px;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            padding: 10px;
-        }
-        .main-nav-bar-home {}
-        .main-nav-bar .bar-item {
-            min-width: 150px;
-        }
-        .main-nav-mobile {
-            display: block;
         }
         .hello__content {
             flex-direction: column;
@@ -571,17 +564,77 @@
         .my-cosmos-content-grid {
             flex-direction: column;
         }
+        .main-nav-bar {
+            border-radius: 6px;
+            position: fixed;
+            top: 50px;
+            width: 80vw;
+            justify-content: space-evenly;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .bar-item.sub-menu-item {
+            width: inherit;
+        }
+        .main-nav-bar-search {
+            max-width: 60vw;
+            width: 60vw;
+        }
     }
     
     @media (max-width: 768px) {
         body {
             font-size: 16px;
         }
-        .container {
-            border-radius: 5px;
-            width: 95vw;
-            margin: 20px auto;
-            padding: 15px 10px;
+        .bar-item-mobile.current-page {
+            color: green;
+        }
+        .sub-bar-mobile {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-nav-bar-mobile.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            height: max-content;
+            width: 90vw;
+            background-color: rgba(8, 8, 8);
+            border-radius: 10px;
+            line-height: 24px;
+            overflow-y: scroll;
+            height: 80vh;
+            padding: 20px 0px;
+        }
+        .main-nav-mobile {
+            display: block;
+        }
+        .bar-item-mobile.tab-line {
+            padding-left: 40px;
+        }
+        .bar-item-mobile {
+            padding-left: 20px;
+        }
+        .main-nav-bar-mobile {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+        }
+        .main-nav-bar-search {
+            max-width: 30vw;
+        }
+        .main-nav-bar {
+            display: none;
+        }
+        .bar-item-mobile {
+            margin-left: 20px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px rgba(16, 201, 16, 0.4) solid;
+        }
+        .bar-item-mobile:hover {
+            background-color: rgba(0, 0, 0, 0.5);
         }
         .hello__title {
             font-size: 25px;
@@ -591,11 +644,5 @@
         }
         .blog__item--title {
             font-size: 18px;
-        }
-        .my-cosmos-content-grid {
-            flex-direction: column;
-        }
-        .main-nav-bar-search {
-            max-width: 100px;
         }
     }
