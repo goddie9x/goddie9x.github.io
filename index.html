@@ -26,17 +26,48 @@
                 </a>
             </div>
             <div class="main-nav-bar">
-                <a class="main-nav-bar-home bar-item " href="https://goddie9x.github.io/">Home</a>
-                <a class=" main-nav-bar-share bar-item " href="https://goddie9x.github.io/share">Chia sẻ</a>
-                <a class="main-nav-bar-story bar-item " href="https://goddie9x.github.io/story">Câu chuyện</a>
-                <a class=" main-nav-bar-relax bar-item " href="https://goddie9x.github.io/relax">Giải trí</a>
-                <a class=" main-nav-bar-product bar-item " href="https://goddie9x.github.io/product">Sản phẩm</a>
-                <!-- 
-                <a class=" main-nav-bar-about bar-item" href="https://goddie9x.github.io/about-me">About me</a> -->
+                <div class="bar-item current-page">
+                    <a class="main-nav-bar-home " href="https://goddie9x.github.io/">Home</a>
+                </div>
+                <div class="bar-item bar-item--has-childrent ">
+                    <a class=" main-nav-bar-share " href="https://goddie9x.github.io/share">Chia sẻ</a>
+                    <div class="sub-menu">
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Máy tính</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Điện thoại</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Lập trình</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Mẹo vặt linh tinh</a>
+                    </div>
+                </div>
+                <div class="bar-item bar-item--has-childrent ">
+                    <a class="main-nav-bar-story " href="https://goddie9x.github.io/story">Câu chuyện</a>
+                    <div class="sub-menu">
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Những giấc mơ</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Công việc</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Đời thường</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Học hành</a>
+                    </div>
+                </div>
+                <div class="bar-item bar-item--has-childrent">
+                    <a class=" main-nav-bar-relax " href="https://goddie9x.github.io/relax">Giải trí</a>
+                    <div class="sub-menu">
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Âm nhạc</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Phim ảnh</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Sách</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">trò chơi</a>
+                    </div>
+                </div>
+                <div class="bar-item bar-item--has-childrent ">
+                    <a class=" main-nav-bar-product " href="https://goddie9x.github.io/product">Sản phẩm</a>
+                    <div class="sub-menu">
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Trang web</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Thơ</a>
+                        <a class="bar-item sub-menu-item" href="https://goddie9x.github.io/">Ảnh video</a>
+                    </div>
+                </div>
             </div>
             <div class="main-nav-search">
                 <input class="main-nav-bar-search bar-item" type="text" placeholder="Search..">
-                <image class="main-nav-bar-submit bar-item" src="../assets/images/timkiem.png"></image>
+                <image class="main-nav-bar-submit" src="../assets/images/timkiem.png"></image>
             </div>
             <div class="main-nav-mobile">
                 <image class="main-nav-mobile-open menu-icon active" src="./assets/images/icon-menu.png"></image>
@@ -45,6 +76,9 @@
         </div>
     </section>
     <section class="hello container" id="hello">
+        <div class="bread-crumb">
+            <a class="bread-crumb__item" href="https://goddie9x.github.io/">Trang chủ <span class="bread-crumb__spread">></span></a>
+        </div>
         <h1 class="hello__title">Xin chào! Mình là Hoàng Minh Tâm</h1>
         <div class="hello__content">
             <img class="hello__content-img" src="./assets/images/hello.gif"></img>
@@ -75,7 +109,7 @@
             <h3 class="blog__item--title"><a href="#">Chia sẻ về Jailbreak với các dòng Iphone</a></h3>
             <p class="blog__item--des">Mình cũng đã từng có thời gian dùng Iphone nhưng hiển nhiên là nó cũng không thoát khỏi niềm đam mê vọc vạch của mình, Iphone thì có vẻ sẽ không thoải mái đối với những người như mình niếu không có Jailbreak.</p>
         </div>
-        <a class="read-more" href="https://goddie9x.github.io/share">xem thêm</a>
+        <a class="read-more" href="https://goddie9x.github.io/share">xem thêm >></a>
     </section>
     <section class="story container">
         <div class="blog">
@@ -96,7 +130,7 @@
             <p class="blog__item--des">Chia sẻ thật lòng rằng bản thân mình cũng không biết mình bị tự kỷ từ nhỏ cho đến thời gian gần đây mình được gặp một chuyên gia phân tích lại thì đúng mình đã bị tự kỷ từ rất lâu rồi! Như bao người khác, mình cũng từng trải qua những khoảng
                 thời gian khủng hoảng đối với bản thân. Bài viết này sẽ kể lại về một phần những đợt khủng hoảng đó, và nói về cách mình đối mặt, vượt qua hay gục ngã,... </p>
         </div>
-        <a class="read-more" href="https://goddie9x.github.io/story">xem thêm</a>
+        <a class="read-more" href="https://goddie9x.github.io/story">xem thêm >></a>
     </section>
     <section class="relax container">
         <div class="blog">
@@ -115,7 +149,7 @@
             <h3 class="blog__item--title"><a href="#">Rồi đến những bộ phim chuyền hình dài tập hay phim chiếu rạp</a></h3>
             <p class="blog__item--des">Bài viết này mình chia sẻ lại cho mọi người về những bộ phim hay mình đã từng xem và có thể biết đâu các bạn cũng sẽ bị cuốn hút bởi chúng!</p>
         </div>
-        <a class="read-more" href="https://goddie9x.github.io/story">xem thêm</a>
+        <a class="read-more" href="https://goddie9x.github.io/story">xem thêm >></a>
     </section>
     <section class="product container">
         <div class="blog">
@@ -138,7 +172,7 @@
             <h3 class="blog__item--title "><a href="https://goddie9x.github.io/product/#poems">Một vài bài thơ con cóc do chính bản thân mình sáng tác</a></h3>
             <p class="blog__item--des">Nói cho oai vậy thôi chứ thơ mình cũng chỉ là dạng nghiệp dư thỉnh thoảng thơ thẩn, đẩy đưa cảm xúc chút xíu cho thoảng mái tinh thần</p>
         </div>
-        <a href="https://goddie9x.github.io/product" class="read-more">xem thêm</a>
+        <a href="https://goddie9x.github.io/product" class="read-more">xem thêm >></a>
     </section>
     <section class="my-cosmos">
         <div class="my-cosmos-content container">
