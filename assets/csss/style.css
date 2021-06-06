@@ -213,11 +213,9 @@
         top: 0;
         display: flex;
         justify-content: center;
-        max-height: 10vh;
         height: 45px;
         padding: 0;
         z-index: 99;
-        margin: auto;
     }
     
     .main-nav {
