@@ -133,6 +133,10 @@
         color: green;
     }
     
+    .mobile-slide-button.active {
+        display: inline-block;
+    }
+    
     .menu-icon {
         display: none;
         width: 30px;
@@ -586,10 +590,6 @@
         .bar-item-mobile.current-page {
             color: green;
         }
-        .sub-bar-mobile {
-            display: flex;
-            flex-direction: column;
-        }
         .main-nav-bar-mobile.active {
             display: flex;
             flex-direction: column;
@@ -612,6 +612,10 @@
         }
         .bar-item-mobile {
             padding-left: 20px;
+        }
+        .bar-item-mobile.has-childrent {
+            display: flex;
+            justify-content: space-between;
         }
         .main-nav-bar-mobile {
             left: 0;
