@@ -1,105 +1,76 @@
 function renderHeader(firstBreadCrumb, secondBreadCrumb) {
-    $('.header').html(`
-    <div class="main-nav container">
-                    <div class="logo">
-                        <a class="logo-link" href="../">
-                            <div class="logo-image"></div>
-                        </a>
-                    </div>
-                   
-                    <div class="main-nav-bar">
-                        <div class="bar-item">
-                            <a class="main-nav-item " href="../home.html">Home</a>
-                        </div>
-                        <div class="bar-item bar-item--has-childrent ">
-                            <a class=" main-nav-item " href="../share.html">Chia sẻ</a>
-                            <div class="sub-menu">
-                                <a class="bar-item sub-menu-item" href="../share.html/#pc">Máy tính</a>
-                                <a class="bar-item sub-menu-item" href="../share.html/#phone">Điện thoại</a>
-                                <a class="bar-item sub-menu-item" href="../share.html/#coding">Lập trình</a>
-                                <a class="bar-item sub-menu-item" href="../share.html/#tips">Mẹo vặt linh tinh</a>
-                            </div>
-                        </div>
-                        <div class="bar-item bar-item--has-childrent ">
-                            <a class="main-nav-item " href="../story.html">Câu chuyện</a>
-                            <div class="sub-menu">
-                                <a class="bar-item sub-menu-item" href="../story.html/#dreams">Những giấc mơ</a>
-                                <a class="bar-item sub-menu-item" href="../story.html/#jobs">Công việc</a>
-                                <a class="bar-item sub-menu-item" href="../story.html/#life">Đời thường</a>
-                                <a class="bar-item sub-menu-item" href="../story.html/#study">Học hành</a>
-                            </div>
-                        </div>
-                        <div class="bar-item bar-item--has-childrent">
-                            <a class=" main-nav-item " href="../relax.html">Giải trí</a>
-                            <div class="sub-menu">
-                                <a class="bar-item sub-menu-item" href="../relax.html/#musics">Âm nhạc</a>
-                                <a class="bar-item sub-menu-item" href="../relax.html/#medias">Phim ảnh</a>
-                                <a class="bar-item sub-menu-item" href="../relax.html/#books">Sách</a>
-                                <a class="bar-item sub-menu-item" href="../relax.html/#games">trò chơi</a>
-                            </div>
-                        </div>
-                        <div class="bar-item bar-item--has-childrent ">
-                            <a class=" main-nav-item" href="../product.html">Sản phẩm</a>
-                            <div class="sub-menu">
-                                <a class="bar-item sub-menu-item" href="../product.html/#webs">Trang web</a>
-                                <a class="bar-item sub-menu-item" href="../product.html/#poems">Thơ</a>
-                                <a class="bar-item sub-menu-item" href="../product.html/#medias">Ảnh video</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-nav-mobile">
-                        <a class="bar-item-mobile " href="../home.html">Home</a>
-                        <a class="bar-item-mobile " href="../share.html">Chia sẻ</a>
-                        <div class="sub-menu">
-                        <a class="bar-item-mobile tab-line" href="../share.html/#pc">Máy tính</a>
-                        <a class="bar-item-mobile tab-line" href="../share.html/#phone">Điện thoại</a>
-                        <a class="bar-item-mobile tab-line" href="../share.html/#coding">Lập trình</a>
-                        <a class="bar-item-mobile tab-line" href="../share.html/#tips">Mẹo vặt linh tinh</a>
-                        </div>
-                        <a class="bar-item-mobile " href="../story.html">Câu chuyện</a>
-                        <div class="sub-menu">
-                        <a class="bar-item-mobile tab-line" href="../story.html/#dreams">Những giấc mơ</a>
-                        <a class="bar-item-mobile tab-line" href="../story.html/#jobs">Công việc</a>
-                        <a class="bar-item-mobile tab-line" href="../story.html/#life">Đời thường</a>
-                        <a class="bar-item-mobile tab-line" href="../story.html/#study">Học hành</a>
-                        </div>
-                        <a class="bar-item-mobile " href="../relax.html">Giải trí</a>
-                        <div class="sub-menu">
-                        <a class="bar-item-mobile tab-line" href="../relax.html/#musics">Âm nhạc</a>
-                        <a class="bar-item-mobile tab-line" href="../relax.html/#medias">Phim ảnh</a>
-                        <a class="bar-item-mobile tab-line" href="../relax.html/#books">Sách</a>
-                        <a class="bar-item-mobile tab-line" href="../relax.html/#games">trò chơi</a>
-                        </div>
-                        <a class="bar-item-mobile " href="../product.html">Sản phẩm</a>
-                        <div class="sub-menu">
-                        <a class="bar-item-mobile tab-line" href="../product/webs">Trang web</a>
-                        <a class="bar-item-mobile tab-line" href="../product/poems">Thơ</a>
-                        <a class="bar-item-mobile tab-line" href="../product/medias">Ảnh video</a>
-                        </div>
-                    </div>
-                    <div class="main-nav-search">
-                        <input class="main-nav-item bar-item float-right" type="text" placeholder="Search..">
-                        <image class="main-nav-item" src="../assets/images/timkiem.png"></image>
-                    </div>
-                    <div class="main-nav-mobile-icon">
-                        <image class="main-nav-mobile-open menu-icon active" src="../assets/images/icon-menu.png"></image>
-                        <image class="main-nav-mobile-close menu-icon" src="../assets/images/icon-menu-close.png"></image>
-                    </div>
-                </div>`);
+    $('.header').html(`<div class="container">
+    <div class="up">
+        <a href="#hello">
+            <img src="../assets/images/up.png" alt="lên đầu trang">
+        </a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-brand">
+            <a class="logo-link" href="../home.html">
+                <div class="logo-image"></div>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    let mainNav = $('div.bar-item')[firstBreadCrumb];
-    let mainNavMobile = $('.main-nav-mobile').find('.bar-item-mobile:not(.tab-line)')[firstBreadCrumb];
-
-    $(mainNav).addClass('current-page');
-    $(mainNavMobile).addClass('current-page');
-
-    if (Number.isInteger(secondBreadCrumb)) {
-        let secLevelItem = $(mainNav).find('.bar-item')[secondBreadCrumb];
-        let secLevelItemM = $(mainNavMobile).next().find('.bar-item-mobile')[secondBreadCrumb];
-
-        $(secLevelItem).addClass('current-page');
-        $(secLevelItemM).addClass('current-page');
-    }
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="../share.html">Chia sẻ</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../share.html/#pc">Máy tính</a>
+                        <a class="dropdown-item" href="../share.html/#phone">Điện thoại</a>
+                        <a class="dropdown-item" href="../share.html/#coding">Lập trình</a>
+                        <a class="dropdown-item" href="../share.html/#tips">Mẹo vặt</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="../story.html">Câu chuyện</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../story.html/#dreams">Những giấc mơ</a>
+                        <a class="dropdown-item" href="../story.html/#jobs">Công việc</a>
+                        <a class="dropdown-item" href="../story.html/#life">Đời thường</a>
+                        <a class="dropdown-item" href="../story.html/#study">Học hành</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="../relax.html">Giải trí</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../relax.html/#musics">Âm nhạc</a>
+                        <a class="dropdown-item" href="../relax.html/#medias">Phim ảnh</a>
+                        <a class="dropdown-item" href="../relax.html/#books">Sách</a>
+                        <a class="dropdown-item" href="../relax.html/#games">Trò chơi</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="../product.html">Sản phẩm</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../product.html/#webs">Trang web</a>
+                        <a class="dropdown-item" href="../product.html/#poems">Thơ</a>
+                        <a class="dropdown-item" href="../product.html/#medias">Ảnh video</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="seach-bar my-2 my-lg-0">
+                <input class="form-control mr-sm-2 col" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn  -outline-success my-2 my-sm-0 col" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>`);
 };
 
 function renderBreadCrumb(isHomePage) {
@@ -110,11 +81,7 @@ function renderBreadCrumb(isHomePage) {
     $('.hello').prepend(` <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
     </ol>
-    <div class="up">
-    <a href="#hello">
-        <img src="../assets/images/up.png" alt="lên đầu trang">
-    </a>
-</div>
+   
 </nav>`);
     if (isHomePage) {
         breadCrumbHtml += '<li class="breadcrumb-item active" aria-current="page">Home</li>';
@@ -205,9 +172,41 @@ function activeEvent(elementTriggers, Targets, elementContainer, event = 'click'
     }
 }
 
-function replaceClass(element, classNeedReplace, classReplace) {
-    let elementTarget = $(element);
+//my own mini lib
+function activeEvent(elementTriggers, Targets, elementContainer, event = 'click') {
+    if (elementContainer) {
+        if (typeof(Targets) == 'function') {
+            $(elementContainer).delegate(elementTriggers, event, function(e) {
+                Targets(e, this);
+            });
+        } else {
+            $(elementContainer).delegate(elementTriggers, event, function(e) {
+                $(Targets).toggleClass('active');
+            });
+        }
+    } else {
+        let trigger = $(elementTriggers).unbind();
 
-    elementTarget.removeClass(classNeedReplace);
-    elementTarget.addClass(classReplace);
+        if (trigger) {
+            if (typeof(Targets) == 'function') {
+                trigger.on(event, function(e) {
+                    Targets(e, this);
+                });
+            } else {
+                trigger.on(event, function(e) {
+                    $('.nav-scale').toggleClass('active');
+                });
+            }
+        }
+    }
+}
+
+function add3Dots(string, limit, height, lineHeight, fontWeight, replace = '...') {
+    let maxLength = limit - 3;
+
+    if (string.length > maxLength) {
+        string = string.slice(0, maxLength) + replace;
+    }
+
+    return string;
 }
