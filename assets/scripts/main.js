@@ -1,3 +1,7 @@
+let musicSrcs = ['./assets/medias/Bad_liar.mp3', './assets/medias/Believer.mp3', './assets/medias/Demons.mp3',
+    './assets/medias/It_s_Time.mp3', './assets/medias/Natural.mp3', './assets/medias/Radioactive.mp3',
+];
+
 $(document).ready(function() {
 
     function toggleItem(elementTrigger, elementTarget) {
@@ -24,4 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.paddingTop = '0';
         }
     });
+    renderMusic('.hello');
 });
+
+function renderMusic(elementContain, volume = 0.2) {
+    rand = Math.floor(Math.random()) * musicSrcs.length;
+
+    $(elementContain).append(`<audio autoplay="true" loop controls="true" src="${musicSrcs[rand]}" class="my-cosmos-music"></audio>`);
+    $('.my-cosmos-music')[0].volume = volume;
+}

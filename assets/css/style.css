@@ -195,6 +195,10 @@ a:visited {
     margin-left: 10px;
 }
 
+.up {
+    z-index: 9999;
+}
+
 .up a img {
     width: 50px;
     position: fixed;
