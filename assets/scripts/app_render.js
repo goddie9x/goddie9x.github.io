@@ -25,10 +25,10 @@ function renderHeader() {
                     <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../share.html/#pc">Máy tính</a>
-                        <a class="dropdown-item" href="../share.html/#phone">Điện thoại</a>
-                        <a class="dropdown-item" href="../share.html/#coding">Lập trình</a>
-                        <a class="dropdown-item" href="../share.html/#tips">Mẹo vặt</a>
+                        <a class="dropdown-item" href="../share.html#pc">Máy tính</a>
+                        <a class="dropdown-item" href="../share.html#phone">Điện thoại</a>
+                        <a class="dropdown-item" href="../share.html#coding">Lập trình</a>
+                        <a class="dropdown-item" href="../share.html#tips">Mẹo vặt</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -36,10 +36,10 @@ function renderHeader() {
                     <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../story.html/#dreams">Những giấc mơ</a>
-                        <a class="dropdown-item" href="../story.html/#jobs">Công việc</a>
-                        <a class="dropdown-item" href="../story.html/#life">Đời thường</a>
-                        <a class="dropdown-item" href="../story.html/#study">Học hành</a>
+                        <a class="dropdown-item" href="../story.html#dreams">Những giấc mơ</a>
+                        <a class="dropdown-item" href="../story.html#jobs">Công việc</a>
+                        <a class="dropdown-item" href="../story.html#life">Đời thường</a>
+                        <a class="dropdown-item" href="../story.html#study">Học hành</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -47,10 +47,10 @@ function renderHeader() {
                     <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../relax.html/#musics">Âm nhạc</a>
-                        <a class="dropdown-item" href="../relax.html/#medias">Phim ảnh</a>
-                        <a class="dropdown-item" href="../relax.html/#books">Sách</a>
-                        <a class="dropdown-item" href="../relax.html/#games">Trò chơi</a>
+                        <a class="dropdown-item" href="../relax.html#musics">Âm nhạc</a>
+                        <a class="dropdown-item" href="../relax.html#medias">Phim ảnh</a>
+                        <a class="dropdown-item" href="../relax.html#books">Sách</a>
+                        <a class="dropdown-item" href="../relax.html#games">Trò chơi</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -58,9 +58,9 @@ function renderHeader() {
                     <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../product.html/#webs">Trang web</a>
-                        <a class="dropdown-item" href="../product.html/#poems">Thơ</a>
-                        <a class="dropdown-item" href="../product.html/#medias">Ảnh video</a>
+                        <a class="dropdown-item" href="../product.html#webs">Trang web</a>
+                        <a class="dropdown-item" href="../product.html#poems">Thơ</a>
+                        <a class="dropdown-item" href="../product.html#medias">Ảnh video</a>
                     </div>
                 </li>
             </ul>
@@ -83,7 +83,6 @@ function renderBreadCrumb() {
     let isCrumbExit = $('.breadcrumb').length;
 
     if (!isCrumbExit) {
-
         $('.hello').prepend(` <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
         </ol>
@@ -99,8 +98,14 @@ function renderBreadCrumb() {
 
                 if (subLink == path) {
                     $(item).addClass('active');
-                    $(item).parents('.nav-item').addClass('active');
 
+                    let parentNav = $(item).parents('.nav-item');
+                    parentNav.addClass('active');
+
+                    parentNav.each(function(index, Nav) {
+                        $(Nav).find('.breadcrumb-item')
+                    });
+                    breadCrumbHtml += `<li class="breadcrumb-item active" aria-current="page">${item.innerHTML}</li>`;
                     inMainLink = false;
                 }
             });
@@ -121,42 +126,33 @@ function renderBreadCrumb() {
     }
 }
 
-function renderFooter(linkMusic) {
+function renderFooter(info) {
     $('.footer').html(`<div class="container">
-    <div id="contact" class="contact ">
-        <div class="item-title">
+    <div id="contact" class="contact">
+        <div class="contact-title">
             <h2>Liên hệ</h2>
         </div>
-        <div class="item-content">
+        <div class="contact-content">
             <p>
                 <i class="fa fa-map-marker"></i> 129 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội.
             </p>
             <p>
-                <i class="fa fa-phone"></i> 0326152310.
+                <i class="fa fa-phone"></i><a href="tel:0326152310"> 0326152310.</a>
             </p>
             <p>
-                <i class="fa fa-envelope"></i> hoangminhtam7991@gmail.com.
+                <i class="fa fa-envelope"></i><a href="mailto:hoangminhtam7991@gmail.com"> hoangminhtam7991@gmail.com.</a>
             </p>
             <p>
-                <i class="fa fa-envelope"></i> goddie9x@yahoo.com
+                <i class="fa fa-envelope"></i><a href="mailto:goddie9x@yahoo.com"> goddie9x@yahoo.com.</a>
             </p>
         </div>
     </div>
-    <div class="content-grid">
-        <p class="item-content-grid">
+    <div class="contact-grid">
             <a href="https://www.facebook.com/goddie9x/">
                 <i class="fab fa-facebook-square"></i>
             </a>
-        </p>
-        <p class="item-content-grid">
             <a href="https://github.com/goddie9x"> <i class="fab fa-github-square"></i></a>
-        </p>
-        <p class="item-content-grid">
             <a href="https://www.linkedin.com/in/hoangtam9x/"><i class="fab fa-linkedin"></i> </a>
-        </p>
-    </div>
-    <div class="my-cosmos-music">
-        <audio src="${linkMusic}" loop preload="auto " controls="true" autoplay="true" class="chapi "></audio>
     </div>
     <div class="clear-fixed "></div>
 </div>`);
