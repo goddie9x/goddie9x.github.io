@@ -62,7 +62,7 @@ a:visited {
 
 .up {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 90vh;
     z-index: 99;
     right: 30px;
