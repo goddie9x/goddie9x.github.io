@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
 
-            $('.header').addClass('fixed-top');
+            $('.header').addClass('fixed-top', 'col-12');
             $('.up').show();
             // add padding top to show content behind navbar
         } else {
-            $('.header').removeClass('fixed-top');
+            $('.header').removeClass('fixed-top', 'col-12');
             // remove padding top from body
             document.body.style.paddingTop = '0';
             $('.up').hide();

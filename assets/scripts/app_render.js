@@ -97,6 +97,8 @@ function renderBreadCrumb() {
                 let subLink = $(item).attr('href').replace('..', '');
 
                 if (subLink == path) {
+                    let subLink = '';
+
                     $(item).addClass('active');
 
                     let parentNav = $(item).parents('.nav-item');
@@ -104,7 +106,8 @@ function renderBreadCrumb() {
 
 
                     parentNav.each(function(index, Nav) {
-                        let $(Nav).prev()[0];
+                        let currentLink = $(Nav).prev()[0];
+                        subLink = `<li class="breadcrumb-item"><a href="${currentLink.href}">${currentLink.innerHTML}</a></li>`
                     });
                     breadCrumbHtml += `<li class="breadcrumb-item active" aria-current="page">${item.innerHTML}</li>`;
                     inMainLink = false;
