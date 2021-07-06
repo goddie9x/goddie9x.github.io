@@ -102,8 +102,9 @@ function renderBreadCrumb() {
                     let parentNav = $(item).parents('.nav-item');
                     parentNav.addClass('active');
 
+
                     parentNav.each(function(index, Nav) {
-                        $(Nav).find('.breadcrumb-item')
+                        let $(Nav).prev()[0];
                     });
                     breadCrumbHtml += `<li class="breadcrumb-item active" aria-current="page">${item.innerHTML}</li>`;
                     inMainLink = false;
