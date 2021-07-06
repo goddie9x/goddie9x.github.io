@@ -1,4 +1,4 @@
-let musicSrcs = ['./assets/medias/Bad_liar.mp3', './assets/medias/Believer.mp3', './assets/medias/Demons.mp3', './assets/medias/It_s_Time.mp3', './assets/medias/Natural.mp3', './assets/medias/Radioactive.mp3', ];
+let musicSrcs = ['./assets/medias/Bad_liar.mp3', '../assets/medias/Believer.mp3', '../assets/medias/Demons.mp3', '../assets/medias/It_s_Time.mp3', '../assets/medias/Natural.mp3', '../assets/medias/Radioactive.mp3'];
 
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
@@ -14,11 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
             $('.up').hide();
         }
     });
+});
+
+$(document).ready(function() {
     renderMusic('.hello');
 });
 
 function renderMusic(elementContain, volume = 0.2) {
-    rand = Math.floor(Math.random()) * musicSrcs.length;
+    let rand = Math.floor(Math.random() * musicSrcs.length);
 
     $(elementContain).append(`<audio autoplay="true" loop controls="true" src="${musicSrcs[rand]}" class="my-cosmos-music"></audio>`);
     $('.my-cosmos-music')[0].volume = volume;

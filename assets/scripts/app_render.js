@@ -1,4 +1,4 @@
-function renderHeader(firstBreadCrumb, secondBreadCrumb) {
+function renderHeader() {
     $('.header').html(`<div class="container">
     <div class="up">
         <a href="#hello">
@@ -17,8 +17,8 @@ function renderHeader(firstBreadCrumb, secondBreadCrumb) {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../home.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="../share.html">Chia sẻ</a>
@@ -70,37 +70,55 @@ function renderHeader(firstBreadCrumb, secondBreadCrumb) {
             </form>
         </div>
     </nav>
-</div>`);
+</div>
+<script>renderBreadCrumb()</script>
+`);
 };
 
-function renderBreadCrumb(isHomePage) {
+function renderBreadCrumb() {
+    let path = $(location).attr('pathname');
+    let subItem = $('header .dropdown-item');
+    let inMainLink = true;
     let breadCrumbHtml = '';
-    let currPgs = $('.main-nav-bar .current-page');
-    let curPlength = currPgs.length;
+    let isCrumbExit = $('.breadcrumb').length;
 
-    $('.hello').prepend(` <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-    </ol>
-   
-</nav>`);
-    if (isHomePage) {
-        breadCrumbHtml += '<li class="breadcrumb-item active" aria-current="page">Home</li>';
-    } else {
-        breadCrumbHtml += `<li class="breadcrumb-item"> <a href="../home.html">Home</a> <span class="bread-crumb__spread"></span></a></li>`;
-        if (curPlength == 1) {
-            breadCrumbHtml += `<li class="breadcrumb-item active" aria-current="page">${currPgs[0].innerHTML}</li>`
+    if (!isCrumbExit) {
+
+        $('.hello').prepend(` <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        </ol>
+        </nav>`);
+
+        if (path == '/home.html') {
+            breadCrumbHtml = '<li class="breadcrumb-item active" aria-current="page">Home</li>';
+            $('.header .nav-item')[0].classList.add('active');
         } else {
-            currPgs.each((index, element) => {
-                if (index == curPlength - 1) {
-                    breadCrumbHtml += `<li class="breadcrumb-item active" aria-current="page">${element.innerHTML}</li>`;
-                } else {
-                    breadCrumbHtml += `<li class="breadcrumb-item"> <a href="${$(this).attr('href')}">${element.innerHTML}</a> <span class="bread-crumb__spread"></span></a></li>`;
+
+            subItem.each(function(index, item) {
+                let subLink = $(item).attr('href').replace('..', '');
+
+                if (subLink == path) {
+                    $(item).addClass('active');
+                    $(item).parents('.nav-item').addClass('active');
+
+                    inMainLink = false;
                 }
             });
-        }
-    }
 
-    $('ol.breadcrumb').html(breadCrumbHtml);
+            if (inMainLink) {
+                $('.header .nav-link').each(function(index, item) {
+                    let mainLink = $(item).attr('href').replace('..', '');
+
+                    if (mainLink == path) {
+                        $(item).parent().addClass('active');
+                        breadCrumbHtml += ` <li class="breadcrumb-item active" aria-current="page">${item.innerHTML}</li>`;
+                    }
+                });
+            }
+            breadCrumbHtml = `<li class="breadcrumb-item"><a href="../home.html">Home</a></li>` + breadCrumbHtml;
+        }
+        $('ol.breadcrumb').html(breadCrumbHtml);
+    }
 }
 
 function renderFooter(linkMusic) {
