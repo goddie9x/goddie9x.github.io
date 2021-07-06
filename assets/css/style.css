@@ -237,4 +237,9 @@ a:visited {
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .header.fixed-top {
+        margin: 0;
+        padding: 0;
+    }
+}
