@@ -238,4 +238,8 @@ a:visited {
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .header {
+        width: 100vw;
+    }
+}
