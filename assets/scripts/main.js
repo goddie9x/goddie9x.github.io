@@ -1,4 +1,4 @@
-let musicSrcs = ['./assets/medias/Bad_liar.mp3', '../assets/medias/Believer.mp3', '../assets/medias/Demons.mp3', '../assets/medias/It_s_Time.mp3', '../assets/medias/Natural.mp3', '../assets/medias/Radioactive.mp3'];
+let musicSrcs = ['../../../../../../../../assets/medias/Bad_liar.mp3', '../../../../../../../../assets/medias/Believer.mp3', '../../../../../../../../assets/medias/Demons.mp3', '../../../../../../../../assets/medias/It_s_Time.mp3', '../../../../../../../../assets/medias/Natural.mp3', '../../../../../../../../assets/medias/Radioactive.mp3'];
 
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
