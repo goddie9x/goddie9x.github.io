@@ -86,6 +86,23 @@ a:visited {
     font-size: 120%;
 }
 
+.breadcrumb {
+    line-height: 50px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.breadcrumb::before {
+    content: "";
+    background-color: green;
+    width: 25px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    border-left: 2px solid #fff;
+    clip-path: polygon(0 0%, 70% 0, 100% 50%, 70% 100%, 0 100%);
+}
+
 
 /*---------------------------------------------HEADER---------------------------------------------------*/
 
@@ -192,7 +209,7 @@ a:visited {
 .hello {
     border-radius: 15px;
     padding-bottom: 40px;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .breadcrumb {

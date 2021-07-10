@@ -1,4 +1,5 @@
-let musicSrcs = ['../../../../../../assets/medias/Bad_liar.mp3', '../../../../../../../../assets/medias/Believer.mp3', '../../../../../../../../assets/medias/Demons.mp3', '../../../../../../../../assets/medias/It_s_Time.mp3', '../../../../../../../../assets/medias/Natural.mp3', '../../../../../../../../assets/medias/Radioactive.mp3'];
+let homeURL = window.location.origin;
+let musicSrcs = [`${homeURL}/assets/medias/Bad_liar.mp3`, `${homeURL}/assets/medias/Believer.mp3`, `${homeURL}/assets/medias/Demons.mp3`, `${homeURL}/assets/medias/It_s_Time.mp3`, `${homeURL}/assets/medias/Natural.mp3`, `${homeURL}/assets/medias/Radioactive.mp3`];
 
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function() {
     renderMusic('.hello');
+    AOS.init();
 });
 
 function renderMusic(elementContain, volume = 0.2) {
