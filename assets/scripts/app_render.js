@@ -1,15 +1,13 @@
 var base_url = window.location.origin;
 var host = window.location.host;
-var pathArray = window.location.pathname.split('/');
+var localURL = $(location).attr("href");
 
 function renderHeader() {
     $('.header').load(`${base_url}/header.html`);
 };
 
 function renderBreadCrumb() {
-    let path = $(location).attr('pathname');
-    let subItem = $('header .dropdown-item');
-    let inMainLink = true;
+
     let breadCrumbHtml = '';
     let isCrumbExit = $('.breadcrumb').length;
 
@@ -19,43 +17,16 @@ function renderBreadCrumb() {
         </ol>
         </nav>`);
 
-        if (path == '/home.html') {
+        if (localURL == '/home.html') {
             breadCrumbHtml = '<li class="breadcrumb-item active" aria-current="page">Home</li>';
             $('.header .nav-item')[0].classList.add('active');
         } else {
-
-            subItem.each(function(index, item) {
-                let subLink = $(item).attr('href').replace('..', '');
-
-                if (subLink == path) {
-                    let subLink = '';
-
-                    $(item).addClass('active');
-
-                    let parentNav = $(item).parents('.nav-item');
-                    parentNav.addClass('active');
-
-
-                    parentNav.each(function(index, Nav) {
-                        let currentLink = $(Nav).prev()[0];
-                        subLink = `<li class="breadcrumb-item"><a href="${currentLink.href}">${currentLink.innerHTML}</a></li>`
-                    });
-                    breadCrumbHtml += `<li class="breadcrumb-item active" aria-current="page">${item.innerHTML}</li>`;
-                    inMainLink = false;
+            breadCrumbHtml = `<li class="breadcrumb-item"><a href="../home.html">Home</a></li>`;
+            $('.nav-link').each(function(index, link) {
+                if (link.href == localURL) {
+                    $(link).parents('.nav-item').addClass('active');
                 }
             });
-
-            if (inMainLink) {
-                $('.header .nav-link').each(function(index, item) {
-                    let mainLink = $(item).attr('href').replace('..', '');
-
-                    if (mainLink == path) {
-                        $(item).parent().addClass('active');
-                        breadCrumbHtml += ` <li class="breadcrumb-item active" aria-current="page">${item.innerHTML}</li>`;
-                    }
-                });
-            }
-            breadCrumbHtml = `<li class="breadcrumb-item"><a href="../home.html">Home</a></li>` + breadCrumbHtml;
         }
         $('ol.breadcrumb').html(breadCrumbHtml);
     }

@@ -132,13 +132,12 @@ a:visited {
     border-radius: 5px;
 }
 
+.header .nav-link.dropdown-toggle {
+    position: relative;
+    left: -15px;
+}
 
-/* 
-.header .navbar-nav>* {
-    margin-left: 10px;
-} */
-
-.bg-dark .dropdown-item {
+.header .dropdown .dropdown-toggle .bg-dark .dropdown-item {
     color: #fff;
 }
 
@@ -148,10 +147,6 @@ a:visited {
 
 .dropdown-menu {
     animation: slideInDown 0.5s ease;
-}
-
-.header .dropdown .nav-link+.nav-link {
-    margin-left: -20px;
 }
 
 .dropdown-item:hover,
@@ -249,7 +244,10 @@ a:visited {
     .header .dropdown .nav-link {
         width: calc(100%-80px);
     }
-    .header .dropdown .nav-link+.nav-link {
+    .header .dropdown-menu a {
+        padding-left: 20px;
+    }
+    .header .dropdown .dropdown-toggle {
         width: 80px;
         text-align: center;
         float: right;

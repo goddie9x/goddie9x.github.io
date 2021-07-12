@@ -1,12 +1,12 @@
 <div class="container">
     <div class="up">
         <a href="#hello">
-            <img src="../assets/images/up.png" alt="lên đầu trang">
+            <img src="assets/images/up.png" alt="lên đầu trang">
         </a>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="navbar-brand">
-            <a class="logo-link" href="../home.html">
+            <a class="logo-link" href="home.html">
                 <div class="logo-image"></div>
             </a>
         </div>
@@ -17,49 +17,49 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../home.html">Home</a>
+                    <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="../share.html">Chia sẻ</a>
+                    <a class="nav-link" href="share.html">Chia sẻ</a>
                     <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../share.html#pc">Máy tính</a>
-                        <a class="dropdown-item" href="../share.html#phone">Điện thoại</a>
-                        <a class="dropdown-item" href="../share.html#coding">Lập trình</a>
-                        <a class="dropdown-item" href="../share.html#tips">Mẹo vặt</a>
+                        <a class="dropdown-item nav-link" href="share.html#pc">Máy tính</a>
+                        <a class="dropdown-item nav-link" href="share.html#phone">Điện thoại</a>
+                        <a class="dropdown-item nav-link" href="share.html#coding">Lập trình</a>
+                        <a class="dropdown-item nav-link" href="share.html#tips">Mẹo vặt</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="../story.html">Câu chuyện</a>
+                    <a class="nav-link" href="story.html">Câu chuyện</a>
                     <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../story.html#dreams">Những giấc mơ</a>
-                        <a class="dropdown-item" href="../story.html#jobs">Công việc</a>
-                        <a class="dropdown-item" href="../story.html#life">Đời thường</a>
-                        <a class="dropdown-item" href="../story.html#study">Học hành</a>
+                        <a class="dropdown-item nav-link" href="story.html#dreams">Những giấc mơ</a>
+                        <a class="dropdown-item nav-link" href="story.html#jobs">Công việc</a>
+                        <a class="dropdown-item nav-link" href="story.html#life">Đời thường</a>
+                        <a class="dropdown-item nav-link" href="story.html#study">Học hành</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="../relax.html">Giải trí</a>
+                    <a class="nav-link" href="relax.html">Giải trí</a>
                     <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../relax.html#musics">Âm nhạc</a>
-                        <a class="dropdown-item" href="../relax.html#medias">Phim ảnh</a>
-                        <a class="dropdown-item" href="../relax.html#books">Sách</a>
-                        <a class="dropdown-item" href="../relax.html#games">Trò chơi</a>
+                        <a class="dropdown-item nav-link" href="relax.html#musics">Âm nhạc</a>
+                        <a class="dropdown-item nav-link" href="relax.html#medias">Phim ảnh</a>
+                        <a class="dropdown-item nav-link" href="relax.html#books">Sách</a>
+                        <a class="dropdown-item nav-link" href="relax.html#games">Trò chơi</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="../product.html">Sản phẩm</a>
+                    <a class="nav-link" href="product.html">Sản phẩm</a>
                     <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../product.html#webs">Trang web</a>
-                        <a class="dropdown-item" href="../product.html#poems">Thơ</a>
-                        <a class="dropdown-item" href="../product.html#medias">Ảnh video</a>
+                        <a class="dropdown-item nav-link" href="product.html#webs">Trang web</a>
+                        <a class="dropdown-item nav-link" href="product.html#poems">Thơ</a>
+                        <a class="dropdown-item nav-link" href="product.html#medias">Ảnh video</a>
                     </div>
                 </li>
             </ul>
@@ -71,5 +71,7 @@
     </nav>
 </div>
 <script>
-    renderBreadCrumb()
+    $(document).ready(function() {
+        renderBreadCrumb();
+    })
 </script>
