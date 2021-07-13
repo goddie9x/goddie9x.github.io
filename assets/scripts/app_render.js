@@ -95,10 +95,8 @@ function activeEvent(elementTriggers, Targets, elementContainer, event = 'click'
 
 function add3Dots(string, limit, height, lineHeight, fontWeight, replace = '...') {
     let maxLength = limit - 3;
-
     if (string.length > maxLength) {
         string = string.slice(0, maxLength) + replace;
     }
-
     return string;
 }

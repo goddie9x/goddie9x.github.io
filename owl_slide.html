@@ -1,0 +1,127 @@
+<script>
+    /*     
+        if (!window.jQuery) {
+            var script = document.createElement('script');
+            script.type = "text/javascript";
+            script.src = "./assets/outSource/scripts/jquery-3.6.0.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        } */
+    var fakeData = {
+        title: 'tin tức - sức khoẻ',
+        item: [{
+            link: '#',
+            imgURL: './assets/images/chuyenchongau (1).jpg',
+            date: '',
+            h3: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ',
+            p: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ Lâu nay loại nước ép này được biết đến vớ...'
+        }, {
+            link: '#',
+            imgURL: './assets/images/chuyenchongau (1).jpg',
+            date: '',
+            h3: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ',
+            p: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ Lâu nay loại nước ép này được biết đến vớ...'
+        }, {
+            link: '#',
+            imgURL: './assets/images/chuyenchongau (1).jpg',
+            date: '',
+            h3: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ',
+            p: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ Lâu nay loại nước ép này được biết đến vớ...'
+        }, {
+            link: '#',
+            imgURL: './assets/images/chuyenchongau (1).jpg',
+            date: '',
+            h3: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ',
+            p: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ Lâu nay loại nước ép này được biết đến vớ...'
+        }, {
+            link: '#',
+            imgURL: './assets/images/chuyenchongau (1).jpg',
+            date: '',
+            h3: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ',
+            p: 'Một ly nước ép mỗi ngày hơn cả trăm thang thuốc bổ Lâu nay loại nước ép này được biết đến vớ...'
+        }, ]
+    };
+
+    function renderItem() {
+        let html = ``;
+
+        fakeData.item.forEach(element => {
+            html += `  <div class="card item ">
+                        <div class="card-head">
+                            <a href="${element.link}" class="card-thumbnail">
+                                <img class="card-img" src="${element.imgURL}" alt="" class="card-img-top">
+                                <div class="card-img--overlay"></div>
+                            </a>
+                            <button class="quick-view" index="1">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button href="" class="add-cart" index="1">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            <div class="sale-flash">-38%</div>
+                        </div>
+                        <div class="card-body">
+                            <a href="${element.link}" class="card-title">
+                                <h3>${element.h3}</h3>
+                            </a>
+                            <p>${element.p}</p>
+                            <div class="price">
+                                <div class="cost">1.250.000<u>đ</u></div>
+                                <div class="old-price">2.000.000<u>đ</u></div>
+                            </div>
+                        </div>
+                    </div>`
+        });
+        document.querySelector('.owl_slide').innerHTML = html;
+    }
+</script>
+<section class="owl-render">
+    <div class="container">
+        <div class="title-text">
+            <h2>
+            </h2>
+        </div>
+        <div class="row owl_slide owl-carousel">
+        </div>
+    </div>
+    <script>
+        renderItem();
+    </script>
+</section>
+<script>
+    $(document).ready(function() {
+
+        $('.owl_slide').owlCarousel({
+            items: 6,
+            responsive: {
+                1200: {
+                    item: 6,
+                },
+                992: {
+                    items: 4,
+                },
+                768: {
+                    items: 3,
+                },
+                480: {
+                    items: 3,
+                },
+                0: {
+                    items: 3,
+                }
+            },
+            rewind: true,
+            autoplay: false,
+            autoplayHoverPause: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 500,
+            dots: false,
+            dotsEach: false,
+            loop: false,
+            nav: true,
+            navText: [`<img class='btn-slide-left' src='./assets/medias/icon_left.png'>`, `<img class='btn-slide-right' src='./assets/medias/icon_right.png'>`],
+            margin: 10,
+            transitionStyle: 'backSlide',
+            center: false,
+        });
+    });
+</script>

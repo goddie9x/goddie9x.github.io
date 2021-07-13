@@ -132,6 +132,10 @@ a:visited {
     border-radius: 5px;
 }
 
+.header .navbar-nav {
+    margin-right: 10px;
+}
+
 .header .nav-link.dropdown-toggle {
     position: relative;
     left: -15px;

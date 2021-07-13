@@ -73,5 +73,9 @@
 <script>
     $(document).ready(function() {
         renderBreadCrumb();
+        $('.hello').ready(function() {
+            renderMusic('.hello');
+            AOS.init();
+        })
     })
 </script>
