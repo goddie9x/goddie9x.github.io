@@ -17,10 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-$(document).ready(function() {
-    renderMusic('.hello');
-    AOS.init();
-});
+
 
 function renderMusic(elementContain, volume = 0.2) {
     let rand = Math.floor(Math.random() * musicSrcs.length);
