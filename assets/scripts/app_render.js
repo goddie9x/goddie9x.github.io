@@ -24,7 +24,11 @@ function renderBreadCrumb() {
             breadCrumbHtml = `<li class="breadcrumb-item"><a href="../home.html">Home</a></li>`;
             $('.nav-link').each(function(index, link) {
                 if (link.href == localURL) {
-                    $(link).parents('.nav-item').addClass('active');
+                    let parents = $(link).parents('.nav-item')
+                    parents.addClass('active');
+                    parents.forEach(element => {
+
+                    });
                 }
             });
         }
