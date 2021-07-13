@@ -136,9 +136,13 @@ a:visited {
     margin-right: 10px;
 }
 
+.header .nav-item.dropdown {
+    padding-right: 20px;
+}
+
 .header .nav-link.dropdown-toggle {
-    position: relative;
-    left: -15px;
+    position: absolute;
+    right: 0px;
 }
 
 .header .dropdown .dropdown-toggle .bg-dark .dropdown-item {
@@ -245,23 +249,27 @@ a:visited {
 @media (max-width: 71.375em) {}
 
 @media (max-width:62em) {
+    .header .navbar-expand-lg {
+        padding: 10px;
+    }
+    .header .navbar-nav {
+        margin-right: 0;
+    }
     .header .dropdown .nav-link {
-        width: calc(100%-80px);
+        width: calc(100% - 64px);
+    }
+    .header .nav-item.dropdown {
+        padding-right: 0;
     }
     .header .dropdown-menu a {
         padding-left: 20px;
     }
     .header .dropdown .dropdown-toggle {
-        width: 80px;
+        width: 64px;
         text-align: center;
         float: right;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.8);
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.8);
     }
 }
